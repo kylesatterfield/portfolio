@@ -27,8 +27,8 @@
                 <div class="container">
                     <div class="profile-section">
                         <img src="images/profile.png" alt="Profile Picture">
-                        <button onclick="playPause()">Play/Pause Music</button>
-                        <button id="playPauseBtn">Play/Pause Background</button>
+                        <button id="audiopauseBtn">Play Music</button>
+                        <button id="playPauseBtn"></button>
 
                         <!--Contact Info-->
                         <div class="skills first">
@@ -209,17 +209,34 @@
         </div>
     </div>
 
+
+
     <script>
-        var audio = document.getElementById('audioPlayer');
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('audioPlayer');
+            var audiopauseBtn = document.getElementById('audiopauseBtn');
+            
+            audiopauseBtn.addEventListener('click', function() {
+                if (audio.paused) {
+                    audio.play();
+                    audiopauseBtn.textContent = 'Pause Music';
+                } else {
+                    audio.pause();
+                    audiopauseBtn.textContent = 'Play Music';
+                }
+            });
     
-        function playPause() {
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
+            // Update button text based on video play/pause events
+            audio.addEventListener('play', function() {
+                audiopauseBtn.textContent = 'Pause Music';
+            });
+    
+            audio.addEventListener('pause', function() {
+                audiopauseBtn.textContent = 'Play Music';
+            });
+        });
     </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('bgVideo');
