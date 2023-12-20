@@ -42,19 +42,30 @@ body, html {
 h1 {
     font-size: 30px;
     margin: 0;
+    font-family: 'Anton';
+    letter-spacing: 3px;
 }
 
 h2 {
     font-size: 20px;
+    font-family: 'Koulen';
 }
 
 h3 {
     margin: 3px;
+    font-family: 'Koulen';
 }
 
 p {
     font-size: 16px;
     margin: 0;
+}
+
+.top {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gajraj One';
+    text-spacing: 5px;
 }
 
 ::-webkit-scrollbar {
