@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Video Background with Scrollable Content</title>
+</head>
+<body>
+
+    <audio autoplay id="audioPlayer">
+        <source src="images/Top Gun.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bgVideo">
+            <source src="images/Earth2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        
+
+        <div class="content-container">
+            <div class="content">
+                <div class="container">
+                    <div class="profile-section">
+                        <img src="images/profile.png" alt="Profile Picture">
+                        <button onclick="playPause()">Play/Pause Music</button>
+
+                        <!--Contact Info-->
+                        <div class="skills first">
+                            <p class="left contact"><i class="fa fa-briefcase fa-fw margin"></i>GIS Analyst</p>
+                            <p class="left contact"><i class="fa fa-home fa-fw margin"></i>Harrington, DE</p>
+                            <p class="left contact"><i class="fa fa-envelope fa-fw margin"></i>kylethegisguy@gmail.com</p>
+                            <p class="left contact"><i class="fa fa-phone fa-fw margin"></i>443 365 3215</p>
+                        </div>
+
+                        <!--GIS Software-->
+                        <div class="skills">
+                            <h2 class="left"><i class="fa fa-laptop margin"></i>GIS Software</h2>
+                            <div class="progress-container">
+                                <div class="progress-text">ESRI Suite</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:80%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">ArcGIS Pro</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:90%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">ArcGIS Online</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:100%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">ArcGIS Server</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:50%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>                             
+                        </div>   
+
+                        <!--GIS Skills-->
+                        <div class="skills">
+                            <h2 class="left"><i class="fa fa-globe margin"></i>GIS Skills</h2>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>  
+                        </div>
+                          
+                    
+                    
+                        <!--Other Software-->
+                        <div class="skills">
+                            <h2 class="left"><i class="fa fa-desktop margin"></i>Other Software</h2>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>  
+                        </div>
+                     
+                        <!--Other Skills-->
+                        <div class="skills">
+                            <h2 class="left"><i class="fa fa-asterisk margin"></i>Other Skills</h2>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>  
+                        </div>
+                      
+                        <!--Coding Languages-->
+                        <div class="skills">
+                            <h2 class="left"><i class="fa fa-code margin"></i>Coding Languages</h2>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-text">Progress: 50%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:10%"></div>
+                                    <div class="text"></div>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                
+
+
+                    <!--Education-->
+                    <div class="content-section">
+                        <div class="education">
+                            <h1>Education</h1>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>Salisbury University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2010</i></h3>
+                            <p class="indent">Bachelor's of Science in Geography, GIS Minor</p>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>Salisbury University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2011</i></h3>
+                            <p class="indent">Master of Science in GIS Management</p>                           
+                            <!-- Add more education details as needed -->
+                        </div>
+
+                        <!--Work History-->
+                        <div class="work-history">
+                            <h1>Experience</h1>
+                            <hr>
+                            <h3 class="left">Kent County Levy Court</h3>
+                            <p class="left title">GIS Analyst</p>
+                            <p class="left date"><i class="fa fa-calendar fa-fw margin"></i>Jan 2023 - present</p>
+                            <p>Job description and responsibilities go here.</p>
+                            <hr>
+                            <h3 class="left">Century Engineering</h3>
+                            <p class="left title">Planner</p>
+                            <p class="left date"><i class="fa fa-calendar fa-fw margin"></i>Jan 2023 - present</p>
+                            <p>Job description and responsibilities go here.</p>
+                            
+                            <!-- Add more work history details as needed -->
+                        </div>
+
+                                            <!--Education-->
+                    
+                        <div class="education">
+                            <h1>Online Courses</h1>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>Harvard University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2023</i></h3>
+                            <p class="indent">CS50: Introduction to Computer Science</p>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>Harvard University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2023</i></h3>
+                            <p class="indent">CS50's Understanding Technology</p>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>Harvard University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2023</i></h3>
+                            <p class="indent">CS50's Computer Science for Business Professionals</p>
+                            <br>
+                            <h3 class="left"><i class="fa fa-graduation-cap margin"></i>freecodecamp.org&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>2023</i></h3>
+                            <p class="indent">Responsive Website Development</p>
+                            <br>                         
+                            <!-- Add more education details as needed -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var audio = document.getElementById('audioPlayer');
+    
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
