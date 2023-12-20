@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <audio autoplay id="audioPlayer">
+    <audio autoplay loop id="audioPlayer">
         <source src="images/Top Gun.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
@@ -28,6 +28,7 @@
                     <div class="profile-section">
                         <img src="images/profile.png" alt="Profile Picture">
                         <button onclick="playPause()">Play/Pause Music</button>
+                        <button id="playPauseBtn">Play/Pause Background</button>
 
                         <!--Contact Info-->
                         <div class="skills first">
@@ -218,6 +219,31 @@
                 audio.pause();
             }
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('bgVideo');
+            var playPauseButton = document.getElementById('playPauseBtn');
+    
+            playPauseButton.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                    playPauseButton.textContent = 'Pause Background';
+                } else {
+                    video.pause();
+                    playPauseButton.textContent = 'Play Background';
+                }
+            });
+    
+            // Update button text based on video play/pause events
+            video.addEventListener('play', function() {
+                playPauseButton.textContent = 'Pause Background';
+            });
+    
+            video.addEventListener('pause', function() {
+                playPauseButton.textContent = 'Play Background';
+            });
+        });
     </script>
 
 </body>
