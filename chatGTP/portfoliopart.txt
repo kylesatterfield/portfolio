@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Webpage</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-section">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML <span class="percentage-bar" style="width: 80%;"></span></li>
+                    <li>CSS <span class="percentage-bar" style="width: 70%;"></span></li>
+                    <li>JavaScript <span class="percentage-bar" style="width: 60%;"></span></li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="education">
+                <h2>Education</h2>
+                <p><strong>University Name</strong> - Bachelor's Degree in Computer Science (Year Graduated)</p>
+                <!-- Add more education details as needed -->
+            </div>
+            <div class="work-history">
+                <h2>Work History</h2>
+                <h3>Job Title - Company Name (Year Started - Year Ended)</h3>
+                <p>Job description and responsibilities go here.</p>
+                <!-- Add more work history details as needed -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    flex: 1;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.profile-section img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.percentage-bar {
+    display: block;
+    height: 10px;
+    background-color: #3498db;
+}
+
+.content-section {
+    flex: 2;
+    max-width: 66.6667%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.education, .work-history {
+    margin-bottom: 30px;
+}
+
+.education h2, .work-history h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education p, .work-history h3, .work-history p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-section, .content-section {
+        max-width: 100%;
+    }
+}
