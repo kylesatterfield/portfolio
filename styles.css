@@ -49,16 +49,59 @@ h1 {
 h2 {
     font-size: 20px;
     font-family: 'Koulen';
+    letter-spacing: 1px;
 }
 
 h3 {
-    margin: 3px;
+    margin: 1px;
     font-family: 'Koulen';
+    letter-spacing: 1px;
 }
 
 p {
     font-size: 16px;
     margin: 0;
+}
+
+.summary {
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.indent {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.margin {
+    margin-right:16px;
+    margin-left: -5px;
+}
+
+a {
+    background-color: rgba(0, 6, 92, 0.199);
+    color: rgba(255, 255, 255, 0.596);
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+}
+
+.link {
+    margin-top: 12px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
 }
 
 .top {
@@ -190,10 +233,6 @@ button:hover {
     color: black;
 }
 
-.margin {
-    margin-right:16px;
-    margin-left: -5px;
-}
 
 .left {
     text-align: left;
@@ -237,11 +276,6 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
-
-.indent {
-    text-align: left;
-    text-indent: 50px;
 }
 
 #playPauseBtn {
