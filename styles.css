@@ -32,11 +32,37 @@ body, html {
     width: 90%; /* Adjust the width as needed */
     max-width: 1200px; /* Set a maximum width for the content */
     overflow-y: auto; /* Enable vertical scrolling for content */
-}
-
-.content {
     color: white;
     text-align: center;  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.profile-section {
+    overflow: hidden;
+    flex: 1;
+    max-width: 33.3333%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: none;  
+}
+
+.content-section {
+    overflow: hidden;
+    flex: 2;
+    max-width: 66.6667%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.flexreverse {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
 }
 
 h1 {
@@ -118,21 +144,7 @@ a:hover {
     scrollbar-width: none;  /* Firefox */
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
 
-.profile-section {
-    overflow: hidden;
-    flex: 1;
-    max-width: 33.3333%;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: none;
-    
-}
 
 .profile-section img {
     width: 100%;
@@ -166,13 +178,7 @@ a:hover {
     background-color: white;
 }
 
-.content-section {
-    overflow: hidden;
-    flex: 2;
-    max-width: 66.6667%;
-    box-sizing: border-box;
-    padding: 20px;
-}
+
 
 .education, .work-history {
     margin-bottom: 30px;

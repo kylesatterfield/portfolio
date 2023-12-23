@@ -32,37 +32,8 @@ body, html {
     width: 90%; /* Adjust the width as needed */
     max-width: 1200px; /* Set a maximum width for the content */
     overflow-y: auto; /* Enable vertical scrolling for content */
-}
-
-.content {
     color: white;
     text-align: center;  
-}
-
-h1 {
-    font-size: 30px;
-    margin: 0;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-h3 {
-    margin: 3px;
-}
-
-p {
-    font-size: 16px;
-    margin: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-* {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 .container {
@@ -77,13 +48,107 @@ p {
     max-width: 33.3333%;
     box-sizing: border-box;
     padding: 20px;
-    background-color: none;
+    background-color: none;  
+}
+
+.content-section {
+    overflow: hidden;
+    flex: 2;
+    max-width: 66.6667%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.flexreverse {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Koulen';
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin: 1px;
+    font-family: 'Koulen';
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.summary {
+    text-align: justify;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
+.indent {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.margin {
+    margin-right:16px;
+    margin-left: -5px;
+}
+
+a {
+    background-color: rgba(0, 6, 92, 0.199);
+    color: rgba(255, 255, 255, 0.596);
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+}
+
+.link {
+    margin-top: 12px;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+.top {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Gajraj One';
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
 .profile-section img {
     width: 100%;
-    border-radius: 20%;
+    border-radius: 10%;
     margin-bottom: 20px;
 }
 
@@ -113,13 +178,7 @@ p {
     background-color: white;
 }
 
-.content-section {
-    overflow: hidden;
-    flex: 2;
-    max-width: 66.6667%;
-    box-sizing: border-box;
-    padding: 20px;
-}
+
 
 .education, .work-history {
     margin-bottom: 30px;
@@ -147,17 +206,18 @@ hr {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        
     }
 
     .profile-section, .content-section {
-        max-width: 100%;
-        
+        max-width: 100%; 
     }
 
     .content-container {
         width: 90%;
-        
+    }
+
+    .top {
+        font-size: 30px;
     }
 }
 
@@ -169,7 +229,6 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
@@ -180,10 +239,6 @@ button:hover {
     color: black;
 }
 
-.margin {
-    margin-right:16px;
-    margin-left: -5px;
-}
 
 .left {
     text-align: left;
@@ -227,4 +282,8 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+#playPauseBtn {
+    margin-top: 5px;
 }
