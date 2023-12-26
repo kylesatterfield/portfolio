@@ -1,5 +1,5 @@
 body, html {
-    font-family:  Helvetica, 'Arial narrow bold';
+    font-family:  Oswald, Helvetica, 'Arial narrow bold';
     height: 100%;
     margin: 0;
     padding: 0;
@@ -108,6 +108,9 @@ p {
     font-weight: bold;
     margin-bottom: 6px;
     font-size: 20px;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-style: italic;
 }
 
 .margin {
@@ -232,6 +235,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
+    font-family: Oswald;
 }
 
 button:hover {
