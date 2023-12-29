@@ -137,7 +137,7 @@ a {
 a:hover {
     
     color: rgb(255, 255, 255);
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate;
     font-weight: bold;
     border: 1px solid white;
 }
@@ -242,7 +242,7 @@ button {
 }
 
 button:hover {
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 0.7s ease-in-out infinite alternate;
     color: white;
     font-weight: bold;
 }
@@ -298,10 +298,10 @@ button:hover {
 
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+      text-shadow: 0 0 10px rgba(0, 6, 92, 0.199), 0 0 20px rgba(0, 6, 92, 0.199), 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+      text-shadow: 0 0 20px rgba(0, 6, 92, 0.199), 0 0 30px rgba(0, 6, 92, 0.199), 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
     }
   }
