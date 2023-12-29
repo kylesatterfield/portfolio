@@ -135,8 +135,11 @@ a {
 }
 
 a:hover {
-    background-color: white;
-    color: black;
+    
+    color: rgb(255, 255, 255);
+    animation: glow 1s ease-in-out infinite alternate;
+    font-weight: bold;
+    border: 1px solid white;
 }
 
 ::-webkit-scrollbar {
@@ -239,8 +242,9 @@ button {
 }
 
 button:hover {
-    background-color: white;
-    color: black;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -291,3 +295,13 @@ button:hover {
 #playPauseBtn {
     margin-top: 5px;
 }
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+    }
+  }
